@@ -1,5 +1,5 @@
 # Elicoin Block Explorer
-**Elicoin Block Explorer** is a web blockchain explorer made in PHP. It is designed for Elicoin, but it should be working with other Bitcoin / Litecoin Core based wallets too.
+**Elicoin Block Explorer** is a JSON-RPC based web blockchain explorer made in PHP. It is designed for Elicoin, but it should be working with other Bitcoin / Litecoin Core based wallets too.
 
 ## Installation
 1. Install Web server with PHP (tested on Apache with PHP 5.6, but it should be working on any other)
