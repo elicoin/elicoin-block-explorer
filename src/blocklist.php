@@ -5,9 +5,11 @@
  $pgid = (isset($_GET['id']) ? $_GET['id'] : 1);
  echo '<h2>Network info</h2>';
  $miningInfo = getJSONArray('getmininginfo', '')['result'];
+ $totalCoins = getJSONArray('gettxoutsetinfo', '')['result']['total_amount'];
  echo '<table>';
  echo '<tr><td>Difficulty:</td><td>' . round($miningInfo['difficulty'], 5) . '</td></tr>';
  echo '<tr><td>Network hashrate:</td><td>' . humansize($miningInfo['networkhashps'], 1000) . 'H/s</td></tr>';
+ echo '<tr><td>Total mined coins:</td><td>' . round($totalCoins) . '</td></tr>';
  echo '</table>';
  echo '<h2>Last mined blocks</h2>';
  $blockCount = getJSONArray('getblockcount', '')['result'];
